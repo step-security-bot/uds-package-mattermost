@@ -37,13 +37,13 @@ components:
         namespace: mattermost
         url: https://helm.mattermost.com
         gitPath: chart
-        version: 2.6.43
+        version: 2.6.46
         valuesFiles:
           - values/values.yaml
           - values/upstream-values.yaml
     images:
       - appropriate/curl:latest
-      - mattermost/mattermost-enterprise-edition:9.4.2
+      - mattermost/mattermost-enterprise-edition:9995379
 
   - name: mattermost
     required: true
@@ -63,10 +63,10 @@ components:
         namespace: mattermost
         url: https://helm.mattermost.com
         gitPath: chart
-        version: 2.6.43
+        version: 2.6.46
         valuesFiles:
           - values/values.yaml
           - values/registry1-values.yaml
     images:
       - registry1.dso.mil/ironbank/redhat/ubi/ubi9-minimal:9.3
-      - registry1.dso.mil/ironbank/opensource/mattermost/mattermost:9.4.2
+      - registry1.dso.mil/ironbank/opensource/mattermost/mattermost:9.5.1
